@@ -1,0 +1,16 @@
+<br>
+<h3>Hotels List</h3>
+<form method="get" action="/bookings/booking_success">
+    <label for="hotels">Hotel Name</label>
+        <select id="hotels" name="booked[hotel_name]" class="form-select">
+            <option selected="selected" disabled="disabled" >Select the hotel</option>
+            <% @hotels.each do |hotel| %>
+            <option value="<%= hotel.hotel_name %>"><%= hotel.hotel_name %></option>
+            <% end %>
+        </select>
+        
+
+    <div class="col">
+        <button type="submit"  class="btn btn-dark">Book</button>
+    </div>
+</form>

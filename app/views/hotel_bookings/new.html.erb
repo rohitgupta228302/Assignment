@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+    <h1 class="text-brown">New Hotel Booking</h1>
+
+    <%= render 'form', hotel_booking: @hotel_booking %>
+
+    <%= link_to 'Back', hotel_bookings_path, class: "btn btn-primary" %>
+<% else %>
+    <h1>Please Sign in First</h1>
+<% end %>

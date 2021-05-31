@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p class="text-white">
+  <strong>Name:</strong>
+  <%= @hotel_booking.name %>
+</p>
+
+<p class="text-white">
+  <strong>Address:</strong>
+  <%= @hotel_booking.address %>
+  &emsp;
+</p>
+
+<p class="text-white">
+  <strong>Phoneno:</strong>
+  <%= @hotel_booking.phoneno %>
+</p>
+
+
+<%= link_to 'Edit', edit_hotel_booking_path(@hotel_booking), class: "btn btn-primary" %> |
+<%= link_to 'Back', hotel_bookings_path, class: "btn btn-primary" %>

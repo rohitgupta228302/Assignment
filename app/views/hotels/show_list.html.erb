@@ -1,0 +1,19 @@
+<br>
+<h3 class="text-white">Hotels List</h3>
+<table class="table table-hover table-sm table-dark">
+  <thead>
+    <tr>
+      <th>S.No.</th>
+      <th>Hotel Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hotels.each do |hotel| %>
+      <tr>
+        <td><%= hotel.id %></td>
+        <td><%= hotel.hotel_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
